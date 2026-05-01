@@ -1,7 +1,7 @@
 import sys
-from PyQt5.QtGui import QColor
+from PyQt5.QtGui import QColor, QTransform, QPixmap
 from PyQt5.QtWidgets import QApplication, QMainWindow, QGraphicsDropShadowEffect
-from PyQt5.QtCore import QPropertyAnimation, QEasingCurve, QPoint
+from PyQt5.QtCore import QPropertyAnimation, QEasingCurve, QPoint, Qt
 from PyQt5 import uic
 
 def aplicar_sombra(widget, y):
@@ -51,6 +51,11 @@ class AppDemo(QMainWindow):
         aplicar_sombra(self.buscar, 4)
         aplicar_sombra(self.div, 4)
 
+        pixmap = QPixmap('../assets/suitcase-medical-solid-full.svg')
+        transform = QTransform().rotate(25)
+        rotated_pixmap = pixmap.transformed(transform, Qt.SmoothTransformation)
+        
+        self.BG_ICOMED.setPixmap(rotated_pixmap)
 
         animar_hover(self.Febre)
         animar_hover(self.Nause)
