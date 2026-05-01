@@ -237,982 +237,18 @@
       <rect>
        <x>30</x>
        <y>70</y>
-       <width>511</width>
-       <height>321</height>
+       <width>30</width>
+       <height>20</height>
       </rect>
      </property>
-     <layout class="QGridLayout" name="gridLayout">
-      <item row="0" column="0">
-       <widget class="QWidget" name="All" native="true">
-        <widget class="QWidget" name="Widget_MCOMMON" native="true">
-         <property name="geometry">
-          <rect>
-           <x>0</x>
-           <y>0</y>
-           <width>261</width>
-           <height>161</height>
-          </rect>
-         </property>
-         <property name="autoFillBackground">
-          <bool>false</bool>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: #F0F7FE;
-border-radius: 250px; border-radius: 20px</string>
-         </property>
-         <widget class="QWidget" name="Container_MCOMMON" native="true">
-          <property name="geometry">
-           <rect>
-            <x>10</x>
-            <y>10</y>
-            <width>241</width>
-            <height>141</height>
-           </rect>
-          </property>
-          <property name="autoFillBackground">
-           <bool>false</bool>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: #FFFFFF;
-border-radius: 15px;</string>
-          </property>
-          <widget class="QLabel" name="UsoMCOMMON">
-           <property name="enabled">
-            <bool>true</bool>
-           </property>
-           <property name="geometry">
-            <rect>
-             <x>0</x>
-             <y>0</y>
-             <width>241</width>
-             <height>20</height>
-            </rect>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>8</pointsize>
-             <weight>63</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="layoutDirection">
-            <enum>Qt::LeftToRight</enum>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">font-weight: 500;
-background-color: transparent;</string>
-           </property>
-           <property name="text">
-            <string>Uso de Medicamentos Mais Comuns</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-          </widget>
-          <widget class="QLabel" name="list1">
-           <property name="geometry">
-            <rect>
-             <x>30</x>
-             <y>25</y>
-             <width>91</width>
-             <height>111</height>
-            </rect>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>6</pointsize>
-            </font>
-           </property>
-           <property name="autoFillBackground">
-            <bool>false</bool>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: transparent</string>
-           </property>
-           <property name="text">
-            <string>-Paracetamol
--Ibuprofeno
--Dipirona
--Nimesulida
--Aspirina
--Amoxicilina
--Azitromicina
--Loratadina
--Omeprazol
--Losartana
-- Metformina</string>
-           </property>
-          </widget>
-          <widget class="QLabel" name="list2">
-           <property name="geometry">
-            <rect>
-             <x>140</x>
-             <y>25</y>
-             <width>91</width>
-             <height>111</height>
-            </rect>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>6</pointsize>
-            </font>
-           </property>
-           <property name="autoFillBackground">
-            <bool>false</bool>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: transparent;</string>
-           </property>
-           <property name="text">
-            <string>-Paracetamol
--Ibuprofeno
--Dipirona
--Nimesulida
--Aspirina
--Amoxicilina
--Azitromicina
--Loratadina
--Omeprazol
--Losartana
-- Metformina</string>
-           </property>
-          </widget>
-          <widget class="Line" name="line">
-           <property name="geometry">
-            <rect>
-             <x>20</x>
-             <y>20</y>
-             <width>200</width>
-             <height>2</height>
-            </rect>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">background-color: #F0F7FE;</string>
-           </property>
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-          </widget>
-          <widget class="QLabel" name="BG_ICOMED">
-           <property name="geometry">
-            <rect>
-             <x>100</x>
-             <y>-30</y>
-             <width>201</width>
-             <height>191</height>
-            </rect>
-           </property>
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-           <property name="pixmap">
-            <pixmap>../assets/suitcase-medical-solid-full.svg</pixmap>
-           </property>
-           <property name="scaledContents">
-            <bool>true</bool>
-           </property>
-          </widget>
-          <zorder>BG_ICOMED</zorder>
-          <zorder>UsoMCOMMON</zorder>
-          <zorder>list1</zorder>
-          <zorder>list2</zorder>
-          <zorder>line</zorder>
-         </widget>
-        </widget>
-        <widget class="QWidget" name="Widget_COQUEDIAG" native="true">
-         <property name="geometry">
-          <rect>
-           <x>280</x>
-           <y>0</y>
-           <width>231</width>
-           <height>161</height>
-          </rect>
-         </property>
-         <property name="autoFillBackground">
-          <bool>false</bool>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: #F0F7FE;
-border-radius: 250px; border-radius: 20px</string>
-         </property>
-         <layout class="QVBoxLayout" name="verticalLayout_3">
-          <item>
-           <widget class="QWidget" name="Container_COQUEDIAG" native="true">
-            <property name="autoFillBackground">
-             <bool>false</bool>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">background-color: #F0F7FE;
-border-radius: 15px;</string>
-            </property>
-            <layout class="QVBoxLayout" name="verticalLayout_2">
-             <property name="spacing">
-              <number>0</number>
-             </property>
-             <property name="sizeConstraint">
-              <enum>QLayout::SetDefaultConstraint</enum>
-             </property>
-             <property name="leftMargin">
-              <number>9</number>
-             </property>
-             <property name="topMargin">
-              <number>9</number>
-             </property>
-             <property name="rightMargin">
-              <number>9</number>
-             </property>
-             <property name="bottomMargin">
-              <number>9</number>
-             </property>
-             <item>
-              <widget class="QWidget" name="InputFebre" native="true">
-               <property name="enabled">
-                <bool>true</bool>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>16777215</width>
-                 <height>30</height>
-                </size>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">background-color: #F0F7FE;
-border-radius: 0;
-</string>
-               </property>
-               <layout class="QVBoxLayout" name="verticalLayout">
-                <property name="spacing">
-                 <number>0</number>
-                </property>
-                <property name="sizeConstraint">
-                 <enum>QLayout::SetDefaultConstraint</enum>
-                </property>
-                <property name="topMargin">
-                 <number>0</number>
-                </property>
-                <property name="bottomMargin">
-                 <number>0</number>
-                </property>
-                <item>
-                 <widget class="QLineEdit" name="InputF">
-                  <property name="minimumSize">
-                   <size>
-                    <width>0</width>
-                    <height>25</height>
-                   </size>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">border: none;
-border-radius: 10;
-background-color: #F0F7FE; 
-padding-left: 10;
-padding-right: 25;</string>
-                  </property>
-                  <property name="text">
-                   <string>EX: Febre</string>
-                  </property>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
-             <item>
-              <widget class="QWidget" name="div" native="true">
-               <property name="styleSheet">
-                <string notr="true">background-color: white;
-border-top-radius: 0;
-border-bottom-radius: 8;</string>
-               </property>
-               <layout class="QVBoxLayout" name="verticalLayout_5">
-                <property name="spacing">
-                 <number>0</number>
-                </property>
-                <property name="leftMargin">
-                 <number>0</number>
-                </property>
-                <property name="topMargin">
-                 <number>0</number>
-                </property>
-                <property name="rightMargin">
-                 <number>0</number>
-                </property>
-                <property name="bottomMargin">
-                 <number>0</number>
-                </property>
-                <item>
-                 <widget class="QWidget" name="addedOptnsCONT" native="true">
-                  <property name="maximumSize">
-                   <size>
-                    <width>16777215</width>
-                    <height>45</height>
-                   </size>
-                  </property>
-                  <property name="styleSheet">
-                   <string notr="true">background-color:white;
-border-radius: 0;
-
-</string>
-                  </property>
-                  <widget class="QWidget" name="Febre" native="true">
-                   <property name="geometry">
-                    <rect>
-                     <x>20</x>
-                     <y>5</y>
-                     <width>51</width>
-                     <height>16</height>
-                    </rect>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">background-color: #79CDFD; border-radius: 8</string>
-                   </property>
-                   <widget class="QLabel" name="label_27">
-                    <property name="geometry">
-                     <rect>
-                      <x>-1</x>
-                      <y>0</y>
-                      <width>51</width>
-                      <height>16</height>
-                     </rect>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <pointsize>6</pointsize>
-                     </font>
-                    </property>
-                    <property name="cursor">
-                     <cursorShape>PointingHandCursor</cursorShape>
-                    </property>
-                    <property name="text">
-                     <string>Febre</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </widget>
-                  <widget class="QWidget" name="Nause" native="true">
-                   <property name="geometry">
-                    <rect>
-                     <x>80</x>
-                     <y>5</y>
-                     <width>51</width>
-                     <height>16</height>
-                    </rect>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">background-color: #79CDFD; border-radius: 8</string>
-                   </property>
-                   <widget class="QLabel" name="label_28">
-                    <property name="geometry">
-                     <rect>
-                      <x>-1</x>
-                      <y>0</y>
-                      <width>51</width>
-                      <height>16</height>
-                     </rect>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <pointsize>6</pointsize>
-                     </font>
-                    </property>
-                    <property name="cursor">
-                     <cursorShape>PointingHandCursor</cursorShape>
-                    </property>
-                    <property name="text">
-                     <string>Náusea</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </widget>
-                  <widget class="QWidget" name="DorCbc" native="true">
-                   <property name="geometry">
-                    <rect>
-                     <x>20</x>
-                     <y>25</y>
-                     <width>91</width>
-                     <height>16</height>
-                    </rect>
-                   </property>
-                   <property name="styleSheet">
-                    <string notr="true">background-color: #79CDFD; border-radius: 8</string>
-                   </property>
-                   <widget class="QLabel" name="label_29">
-                    <property name="geometry">
-                     <rect>
-                      <x>-1</x>
-                      <y>0</y>
-                      <width>91</width>
-                      <height>16</height>
-                     </rect>
-                    </property>
-                    <property name="font">
-                     <font>
-                      <pointsize>6</pointsize>
-                     </font>
-                    </property>
-                    <property name="cursor">
-                     <cursorShape>PointingHandCursor</cursorShape>
-                    </property>
-                    <property name="text">
-                     <string>Dor de Cabeça</string>
-                    </property>
-                    <property name="alignment">
-                     <set>Qt::AlignCenter</set>
-                    </property>
-                   </widget>
-                  </widget>
-                 </widget>
-                </item>
-                <item>
-                 <widget class="QWidget" name="PossivDiagContainer" native="true">
-                  <property name="styleSheet">
-                   <string notr="true">background-color: transparent;
-</string>
-                  </property>
-                  <layout class="QVBoxLayout" name="verticalLayout_4">
-                   <property name="spacing">
-                    <number>0</number>
-                   </property>
-                   <property name="leftMargin">
-                    <number>0</number>
-                   </property>
-                   <property name="topMargin">
-                    <number>0</number>
-                   </property>
-                   <property name="rightMargin">
-                    <number>0</number>
-                   </property>
-                   <property name="bottomMargin">
-                    <number>0</number>
-                   </property>
-                   <item>
-                    <widget class="Line" name="line_2">
-                     <property name="maximumSize">
-                      <size>
-                       <width>16777215</width>
-                       <height>16777215</height>
-                      </size>
-                     </property>
-                     <property name="layoutDirection">
-                      <enum>Qt::LeftToRight</enum>
-                     </property>
-                     <property name="autoFillBackground">
-                      <bool>false</bool>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true">background-color: #F0F7FE;</string>
-                     </property>
-                     <property name="orientation">
-                      <enum>Qt::Horizontal</enum>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QLabel" name="label_24">
-                     <property name="maximumSize">
-                      <size>
-                       <width>16777215</width>
-                       <height>15</height>
-                      </size>
-                     </property>
-                     <property name="font">
-                      <font>
-                       <pointsize>8</pointsize>
-                       <weight>63</weight>
-                       <bold>true</bold>
-                      </font>
-                     </property>
-                     <property name="styleSheet">
-                      <string notr="true">font-weight: 500;</string>
-                     </property>
-                     <property name="text">
-                      <string>Possíveis diagnósticos</string>
-                     </property>
-                     <property name="alignment">
-                      <set>Qt::AlignCenter</set>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QWidget" name="widget_3" native="true">
-                     <layout class="QHBoxLayout" name="horizontalLayout">
-                      <property name="spacing">
-                       <number>30</number>
-                      </property>
-                      <property name="leftMargin">
-                       <number>25</number>
-                      </property>
-                      <property name="rightMargin">
-                       <number>25</number>
-                      </property>
-                      <item>
-                       <widget class="QLabel" name="label_25">
-                        <property name="font">
-                         <font>
-                          <pointsize>6</pointsize>
-                         </font>
-                        </property>
-                        <property name="styleSheet">
-                         <string notr="true">background-color: transparent;</string>
-                        </property>
-                        <property name="text">
-                         <string>- taltal
-- taltaltal
-- taltaltal</string>
-                        </property>
-                       </widget>
-                      </item>
-                      <item>
-                       <widget class="QLabel" name="label_26">
-                        <property name="font">
-                         <font>
-                          <pointsize>6</pointsize>
-                         </font>
-                        </property>
-                        <property name="styleSheet">
-                         <string notr="true">background-color: transparent;</string>
-                        </property>
-                        <property name="text">
-                         <string>- taltal
-- taltaltal
-- taltaltal</string>
-                        </property>
-                       </widget>
-                      </item>
-                     </layout>
-                    </widget>
-                   </item>
-                  </layout>
-                 </widget>
-                </item>
-               </layout>
-              </widget>
-             </item>
-            </layout>
-           </widget>
-          </item>
-         </layout>
-        </widget>
-        <widget class="QWidget" name="Widget_ATPSERV" native="true">
-         <property name="geometry">
-          <rect>
-           <x>0</x>
-           <y>180</y>
-           <width>261</width>
-           <height>141</height>
-          </rect>
-         </property>
-         <property name="autoFillBackground">
-          <bool>false</bool>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: #F0F7FE;
-border-radius: 250px; border-radius: 20px</string>
-         </property>
-         <widget class="QWidget" name="Container_ATPSERV" native="true">
-          <property name="geometry">
-           <rect>
-            <x>10</x>
-            <y>10</y>
-            <width>241</width>
-            <height>121</height>
-           </rect>
-          </property>
-          <property name="autoFillBackground">
-           <bool>false</bool>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: #FFFFFF;
-border-radius: 15px;</string>
-          </property>
-          <layout class="QHBoxLayout" name="horizontalLayout_5">
-           <property name="leftMargin">
-            <number>0</number>
-           </property>
-           <property name="topMargin">
-            <number>0</number>
-           </property>
-           <property name="rightMargin">
-            <number>0</number>
-           </property>
-           <property name="bottomMargin">
-            <number>0</number>
-           </property>
-           <item>
-            <widget class="QWidget" name="GRAPH" native="true">
-             <layout class="QHBoxLayout" name="horizontalLayout_6">
-              <property name="leftMargin">
-               <number>4</number>
-              </property>
-              <item>
-               <widget class="QWidget" name="GRAPH_2" native="true">
-                <property name="styleSheet">
-                 <string notr="true">background-color: qconicalgradient(
-    cx: 0.5, cy: 0.5, 
-    angle: 0, 
-    stop: 0 #143982, 
-	stop: 0.12 #143982, 
-    stop: 0.13 #1B61DB,
-	stop: 0.43 #1B61DB,
-	stop: 0.44 #79CDFC,
-	stop: 0.85 #79CDFC,
-	stop: 0.86 #87BAD3,
-	stop: 1 #87BAD3
-);
-border-radius: 50;
-
-</string>
-                </property>
-                <layout class="QHBoxLayout" name="horizontalLayout_7">
-                 <property name="spacing">
-                  <number>0</number>
-                 </property>
-                 <property name="leftMargin">
-                  <number>24</number>
-                 </property>
-                 <property name="topMargin">
-                  <number>24</number>
-                 </property>
-                 <property name="rightMargin">
-                  <number>24</number>
-                 </property>
-                 <property name="bottomMargin">
-                  <number>24</number>
-                 </property>
-                 <item>
-                  <widget class="QWidget" name="WHITE_CENTER" native="true">
-                   <property name="styleSheet">
-                    <string notr="true">background-color: white; border-radius: 25;</string>
-                   </property>
-                  </widget>
-                 </item>
-                </layout>
-               </widget>
-              </item>
-             </layout>
-            </widget>
-           </item>
-           <item>
-            <widget class="QWidget" name="DATASIDECONT" native="true">
-             <widget class="QLabel" name="Title">
-              <property name="geometry">
-               <rect>
-                <x>10</x>
-                <y>0</y>
-                <width>111</width>
-                <height>41</height>
-               </rect>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">background-color: transparent;
-font-weight: 500; font-size: 10px</string>
-              </property>
-              <property name="text">
-               <string>Atendimento por tipo de serviço</string>
-              </property>
-              <property name="textFormat">
-               <enum>Qt::AutoText</enum>
-              </property>
-              <property name="scaledContents">
-               <bool>false</bool>
-              </property>
-              <property name="alignment">
-               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
-              </property>
-              <property name="wordWrap">
-               <bool>true</bool>
-              </property>
-             </widget>
-             <widget class="QLabel" name="ImgIcoBG">
-              <property name="geometry">
-               <rect>
-                <x>20</x>
-                <y>0</y>
-                <width>111</width>
-                <height>121</height>
-               </rect>
-              </property>
-              <property name="text">
-               <string/>
-              </property>
-              <property name="pixmap">
-               <pixmap>../assets/user-injured-solid-full.svg</pixmap>
-              </property>
-              <property name="scaledContents">
-               <bool>true</bool>
-              </property>
-             </widget>
-             <widget class="QWidget" name="first" native="true">
-              <property name="geometry">
-               <rect>
-                <x>0</x>
-                <y>40</y>
-                <width>120</width>
-                <height>16</height>
-               </rect>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">background-color:transparent;</string>
-              </property>
-              <widget class="QLabel" name="label_17">
-               <property name="geometry">
-                <rect>
-                 <x>20</x>
-                 <y>0</y>
-                 <width>91</width>
-                 <height>17</height>
-                </rect>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">font-size: 8px; background-color: transparent;</string>
-               </property>
-               <property name="text">
-                <string>12% - Pronto Socorro</string>
-               </property>
-              </widget>
-              <widget class="QWidget" name="widget_14" native="true">
-               <property name="geometry">
-                <rect>
-                 <x>8</x>
-                 <y>3</y>
-                 <width>8</width>
-                 <height>10</height>
-                </rect>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">background-color: #143982;</string>
-               </property>
-              </widget>
-             </widget>
-             <widget class="QWidget" name="second" native="true">
-              <property name="geometry">
-               <rect>
-                <x>0</x>
-                <y>55</y>
-                <width>120</width>
-                <height>16</height>
-               </rect>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">background-color:transparent;</string>
-              </property>
-              <widget class="QLabel" name="label_18">
-               <property name="geometry">
-                <rect>
-                 <x>20</x>
-                 <y>0</y>
-                 <width>91</width>
-                 <height>17</height>
-                </rect>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">font-size: 8px; background-color: transparent;</string>
-               </property>
-               <property name="text">
-                <string>43% - Internação</string>
-               </property>
-              </widget>
-              <widget class="QWidget" name="widget_17" native="true">
-               <property name="geometry">
-                <rect>
-                 <x>8</x>
-                 <y>3</y>
-                 <width>8</width>
-                 <height>10</height>
-                </rect>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">background-color: #1B61DB;</string>
-               </property>
-              </widget>
-             </widget>
-             <widget class="QWidget" name="third" native="true">
-              <property name="geometry">
-               <rect>
-                <x>0</x>
-                <y>70</y>
-                <width>120</width>
-                <height>16</height>
-               </rect>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">background-color:transparent;</string>
-              </property>
-              <widget class="QLabel" name="label_21">
-               <property name="geometry">
-                <rect>
-                 <x>20</x>
-                 <y>0</y>
-                 <width>91</width>
-                 <height>17</height>
-                </rect>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">font-size: 8px; background-color: transparent;</string>
-               </property>
-               <property name="text">
-                <string>30% - Exames</string>
-               </property>
-              </widget>
-              <widget class="QWidget" name="widget_20" native="true">
-               <property name="geometry">
-                <rect>
-                 <x>8</x>
-                 <y>3</y>
-                 <width>8</width>
-                 <height>10</height>
-                </rect>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">background-color: #79CDFC;</string>
-               </property>
-              </widget>
-             </widget>
-             <widget class="QWidget" name="fourth" native="true">
-              <property name="geometry">
-               <rect>
-                <x>0</x>
-                <y>85</y>
-                <width>120</width>
-                <height>16</height>
-               </rect>
-              </property>
-              <property name="styleSheet">
-               <string notr="true">background-color:transparent;</string>
-              </property>
-              <widget class="QLabel" name="label_22">
-               <property name="geometry">
-                <rect>
-                 <x>20</x>
-                 <y>0</y>
-                 <width>91</width>
-                 <height>17</height>
-                </rect>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">font-size: 8px; background-color: transparent;</string>
-               </property>
-               <property name="text">
-                <string>15% - Outro</string>
-               </property>
-              </widget>
-              <widget class="QWidget" name="widget_23" native="true">
-               <property name="geometry">
-                <rect>
-                 <x>8</x>
-                 <y>3</y>
-                 <width>8</width>
-                 <height>10</height>
-                </rect>
-               </property>
-               <property name="styleSheet">
-                <string notr="true">background-color: #87BAD3;</string>
-               </property>
-              </widget>
-             </widget>
-             <zorder>ImgIcoBG</zorder>
-             <zorder>Title</zorder>
-             <zorder>first</zorder>
-             <zorder>second</zorder>
-             <zorder>third</zorder>
-             <zorder>fourth</zorder>
-            </widget>
-           </item>
-          </layout>
-         </widget>
-        </widget>
-        <widget class="QWidget" name="WidgetDIGQF" native="true">
-         <property name="geometry">
-          <rect>
-           <x>280</x>
-           <y>180</y>
-           <width>231</width>
-           <height>141</height>
-          </rect>
-         </property>
-         <property name="autoFillBackground">
-          <bool>false</bool>
-         </property>
-         <property name="styleSheet">
-          <string notr="true">background-color: #F0F7FE;
-border-radius: 250px; border-radius: 20px</string>
-         </property>
-         <widget class="QWidget" name="Container_DIGQF" native="true">
-          <property name="geometry">
-           <rect>
-            <x>10</x>
-            <y>10</y>
-            <width>211</width>
-            <height>121</height>
-           </rect>
-          </property>
-          <property name="autoFillBackground">
-           <bool>false</bool>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">background-color: #FFFFFF;
-border-radius: 15px;</string>
-          </property>
-          <widget class="QLabel" name="DIGQF_Label">
-           <property name="geometry">
-            <rect>
-             <x>30</x>
-             <y>5</y>
-             <width>151</width>
-             <height>31</height>
-            </rect>
-           </property>
-           <property name="font">
-            <font>
-             <pointsize>8</pointsize>
-             <weight>63</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="styleSheet">
-            <string notr="true">font-weight: 500;</string>
-           </property>
-           <property name="text">
-            <string>Diagnósticos e queixas mais frequentes</string>
-           </property>
-           <property name="alignment">
-            <set>Qt::AlignCenter</set>
-           </property>
-           <property name="wordWrap">
-            <bool>true</bool>
-           </property>
-          </widget>
-          <widget class="QWidget" name="imagem" native="true">
-           <property name="geometry">
-            <rect>
-             <x>0</x>
-             <y>39</y>
-             <width>211</width>
-             <height>81</height>
-            </rect>
-           </property>
-          </widget>
-         </widget>
-        </widget>
-       </widget>
-      </item>
-     </layout>
+     <layout class="QGridLayout" name="gridLayout"/>
     </widget>
     <widget class="QWidget" name="NAV" native="true">
      <property name="geometry">
       <rect>
-       <x>10</x>
+       <x>30</x>
        <y>399</y>
-       <width>541</width>
+       <width>511</width>
        <height>21</height>
       </rect>
      </property>
@@ -1413,6 +449,1386 @@ padding-left: 12px;</string>
        </widget>
       </item>
      </layout>
+    </widget>
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>70</y>
+       <width>511</width>
+       <height>321</height>
+      </rect>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <widget class="QWidget" name="All_1" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>509</width>
+         <height>319</height>
+        </rect>
+       </property>
+       <widget class="QWidget" name="Widget_MCOMMON" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>0</y>
+          <width>261</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #F0F7FE;
+border-radius: 250px; border-radius: 20px</string>
+        </property>
+        <widget class="QWidget" name="Container_MCOMMON" native="true">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>241</width>
+           <height>141</height>
+          </rect>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #FFFFFF;
+border-radius: 15px;</string>
+         </property>
+         <widget class="QLabel" name="UsoMCOMMON">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>241</width>
+            <height>20</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>63</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="layoutDirection">
+           <enum>Qt::LeftToRight</enum>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-weight: 500;
+background-color: transparent;</string>
+          </property>
+          <property name="text">
+           <string>Uso de Medicamentos Mais Comuns</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+         <widget class="QLabel" name="list1">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>25</y>
+            <width>91</width>
+            <height>111</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>6</pointsize>
+           </font>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: transparent</string>
+          </property>
+          <property name="text">
+           <string>-Paracetamol
+-Ibuprofeno
+-Dipirona
+-Nimesulida
+-Aspirina
+-Amoxicilina
+-Azitromicina
+-Loratadina
+-Omeprazol
+-Losartana
+- Metformina</string>
+          </property>
+         </widget>
+         <widget class="QLabel" name="list2">
+          <property name="geometry">
+           <rect>
+            <x>140</x>
+            <y>25</y>
+            <width>91</width>
+            <height>111</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>6</pointsize>
+           </font>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: transparent;</string>
+          </property>
+          <property name="text">
+           <string>-Paracetamol
+-Ibuprofeno
+-Dipirona
+-Nimesulida
+-Aspirina
+-Amoxicilina
+-Azitromicina
+-Loratadina
+-Omeprazol
+-Losartana
+- Metformina</string>
+          </property>
+         </widget>
+         <widget class="Line" name="line">
+          <property name="geometry">
+           <rect>
+            <x>20</x>
+            <y>20</y>
+            <width>200</width>
+            <height>2</height>
+           </rect>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: #F0F7FE;</string>
+          </property>
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+         </widget>
+         <widget class="QLabel" name="BG_ICOMED">
+          <property name="geometry">
+           <rect>
+            <x>100</x>
+            <y>-30</y>
+            <width>201</width>
+            <height>191</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="pixmap">
+           <pixmap>../assets/suitcase-medical-solid-full.svg</pixmap>
+          </property>
+          <property name="scaledContents">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <zorder>BG_ICOMED</zorder>
+         <zorder>UsoMCOMMON</zorder>
+         <zorder>list1</zorder>
+         <zorder>list2</zorder>
+         <zorder>line</zorder>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="Widget_COQUEDIAG" native="true">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>0</y>
+          <width>231</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #F0F7FE;
+border-radius: 250px; border-radius: 20px</string>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QWidget" name="Container_COQUEDIAG" native="true">
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">background-color: #F0F7FE;
+border-radius: 15px;</string>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="sizeConstraint">
+             <enum>QLayout::SetDefaultConstraint</enum>
+            </property>
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="topMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <property name="bottomMargin">
+             <number>9</number>
+            </property>
+            <item>
+             <widget class="QWidget" name="InputFebre" native="true">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: #F0F7FE;
+border-radius: 0;
+</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="sizeConstraint">
+                <enum>QLayout::SetDefaultConstraint</enum>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QLineEdit" name="InputF">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>25</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">border: none;
+border-radius: 10;
+background-color: #F0F7FE; 
+padding-left: 10;
+padding-right: 25;</string>
+                 </property>
+                 <property name="text">
+                  <string>EX: Febre</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="div" native="true">
+              <property name="styleSheet">
+               <string notr="true">background-color: white;
+border-top-radius: 0;
+border-bottom-radius: 8;</string>
+              </property>
+              <layout class="QVBoxLayout" name="verticalLayout_5">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+               <property name="leftMargin">
+                <number>0</number>
+               </property>
+               <property name="topMargin">
+                <number>0</number>
+               </property>
+               <property name="rightMargin">
+                <number>0</number>
+               </property>
+               <property name="bottomMargin">
+                <number>0</number>
+               </property>
+               <item>
+                <widget class="QWidget" name="addedOptnsCONT" native="true">
+                 <property name="maximumSize">
+                  <size>
+                   <width>16777215</width>
+                   <height>45</height>
+                  </size>
+                 </property>
+                 <property name="styleSheet">
+                  <string notr="true">background-color:white;
+border-radius: 0;
+
+</string>
+                 </property>
+                 <widget class="QWidget" name="Febre" native="true">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>5</y>
+                    <width>51</width>
+                    <height>16</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: #79CDFD; border-radius: 8</string>
+                  </property>
+                  <widget class="QLabel" name="label_27">
+                   <property name="geometry">
+                    <rect>
+                     <x>-1</x>
+                     <y>0</y>
+                     <width>51</width>
+                     <height>16</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>6</pointsize>
+                    </font>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="text">
+                    <string>Febre</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </widget>
+                 <widget class="QWidget" name="Nause" native="true">
+                  <property name="geometry">
+                   <rect>
+                    <x>80</x>
+                    <y>5</y>
+                    <width>51</width>
+                    <height>16</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: #79CDFD; border-radius: 8</string>
+                  </property>
+                  <widget class="QLabel" name="label_28">
+                   <property name="geometry">
+                    <rect>
+                     <x>-1</x>
+                     <y>0</y>
+                     <width>51</width>
+                     <height>16</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>6</pointsize>
+                    </font>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="text">
+                    <string>Náusea</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </widget>
+                 <widget class="QWidget" name="DorCbc" native="true">
+                  <property name="geometry">
+                   <rect>
+                    <x>20</x>
+                    <y>25</y>
+                    <width>91</width>
+                    <height>16</height>
+                   </rect>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">background-color: #79CDFD; border-radius: 8</string>
+                  </property>
+                  <widget class="QLabel" name="label_29">
+                   <property name="geometry">
+                    <rect>
+                     <x>-1</x>
+                     <y>0</y>
+                     <width>91</width>
+                     <height>16</height>
+                    </rect>
+                   </property>
+                   <property name="font">
+                    <font>
+                     <pointsize>6</pointsize>
+                    </font>
+                   </property>
+                   <property name="cursor">
+                    <cursorShape>PointingHandCursor</cursorShape>
+                   </property>
+                   <property name="text">
+                    <string>Dor de Cabeça</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </widget>
+                </widget>
+               </item>
+               <item>
+                <widget class="QWidget" name="PossivDiagContainer" native="true">
+                 <property name="styleSheet">
+                  <string notr="true">background-color: transparent;
+</string>
+                 </property>
+                 <layout class="QVBoxLayout" name="verticalLayout_4">
+                  <property name="spacing">
+                   <number>0</number>
+                  </property>
+                  <property name="leftMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="topMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="rightMargin">
+                   <number>0</number>
+                  </property>
+                  <property name="bottomMargin">
+                   <number>0</number>
+                  </property>
+                  <item>
+                   <widget class="Line" name="line_2">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>16777215</height>
+                     </size>
+                    </property>
+                    <property name="layoutDirection">
+                     <enum>Qt::LeftToRight</enum>
+                    </property>
+                    <property name="autoFillBackground">
+                     <bool>false</bool>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">background-color: #F0F7FE;</string>
+                    </property>
+                    <property name="orientation">
+                     <enum>Qt::Horizontal</enum>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_24">
+                    <property name="maximumSize">
+                     <size>
+                      <width>16777215</width>
+                      <height>15</height>
+                     </size>
+                    </property>
+                    <property name="font">
+                     <font>
+                      <pointsize>8</pointsize>
+                      <weight>63</weight>
+                      <bold>true</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">font-weight: 500;</string>
+                    </property>
+                    <property name="text">
+                     <string>Possíveis diagnósticos</string>
+                    </property>
+                    <property name="alignment">
+                     <set>Qt::AlignCenter</set>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QWidget" name="widget_3" native="true">
+                    <layout class="QHBoxLayout" name="horizontalLayout">
+                     <property name="spacing">
+                      <number>30</number>
+                     </property>
+                     <property name="leftMargin">
+                      <number>25</number>
+                     </property>
+                     <property name="rightMargin">
+                      <number>25</number>
+                     </property>
+                     <item>
+                      <widget class="QLabel" name="label_25">
+                       <property name="font">
+                        <font>
+                         <pointsize>6</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: transparent;</string>
+                       </property>
+                       <property name="text">
+                        <string>- taltal
+- taltaltal
+- taltaltal</string>
+                       </property>
+                      </widget>
+                     </item>
+                     <item>
+                      <widget class="QLabel" name="label_26">
+                       <property name="font">
+                        <font>
+                         <pointsize>6</pointsize>
+                        </font>
+                       </property>
+                       <property name="styleSheet">
+                        <string notr="true">background-color: transparent;</string>
+                       </property>
+                       <property name="text">
+                        <string>- taltal
+- taltaltal
+- taltaltal</string>
+                       </property>
+                      </widget>
+                     </item>
+                    </layout>
+                   </widget>
+                  </item>
+                 </layout>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="Widget_ATPSERV" native="true">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>180</y>
+          <width>261</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #F0F7FE;
+border-radius: 250px; border-radius: 20px</string>
+        </property>
+        <widget class="QWidget" name="Container_ATPSERV" native="true">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>241</width>
+           <height>121</height>
+          </rect>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #FFFFFF;
+border-radius: 15px;</string>
+         </property>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QWidget" name="GRAPH" native="true">
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <property name="leftMargin">
+              <number>4</number>
+             </property>
+             <item>
+              <widget class="QWidget" name="GRAPH_2" native="true">
+               <property name="maximumSize">
+                <size>
+                 <width>100</width>
+                 <height>16777215</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background-color: qconicalgradient(
+    cx: 0.5, cy: 0.5, 
+    angle: 0, 
+    stop: 0 #143982, 
+	stop: 0.12 #143982, 
+    stop: 0.13 #1B61DB,
+	stop: 0.43 #1B61DB,
+	stop: 0.44 #79CDFC,
+	stop: 0.85 #79CDFC,
+	stop: 0.86 #87BAD3,
+	stop: 1 #87BAD3
+);
+border-radius: 50;
+
+</string>
+               </property>
+               <layout class="QHBoxLayout" name="horizontalLayout_7">
+                <property name="spacing">
+                 <number>0</number>
+                </property>
+                <property name="leftMargin">
+                 <number>24</number>
+                </property>
+                <property name="topMargin">
+                 <number>24</number>
+                </property>
+                <property name="rightMargin">
+                 <number>24</number>
+                </property>
+                <property name="bottomMargin">
+                 <number>24</number>
+                </property>
+                <item>
+                 <widget class="QWidget" name="WHITE_CENTER" native="true">
+                  <property name="styleSheet">
+                   <string notr="true">background-color: white; border-radius: 25;</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="DATASIDECONT" native="true">
+            <widget class="QLabel" name="Title">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>0</y>
+               <width>111</width>
+               <height>41</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: transparent;
+font-weight: 500; font-size: 10px</string>
+             </property>
+             <property name="text">
+              <string>Atendimento por tipo de serviço</string>
+             </property>
+             <property name="textFormat">
+              <enum>Qt::AutoText</enum>
+             </property>
+             <property name="scaledContents">
+              <bool>false</bool>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QLabel" name="ImgIcoBG">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>0</y>
+               <width>111</width>
+               <height>121</height>
+              </rect>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+             <property name="pixmap">
+              <pixmap>../assets/user-injured-solid-full.svg</pixmap>
+             </property>
+             <property name="scaledContents">
+              <bool>true</bool>
+             </property>
+            </widget>
+            <widget class="QWidget" name="first" native="true">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>40</y>
+               <width>120</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:transparent;</string>
+             </property>
+             <widget class="QLabel" name="label_17">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>0</y>
+                <width>91</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font-size: 8px; background-color: transparent;</string>
+              </property>
+              <property name="text">
+               <string>12% - Pronto Socorro</string>
+              </property>
+             </widget>
+             <widget class="QWidget" name="widget_14" native="true">
+              <property name="geometry">
+               <rect>
+                <x>8</x>
+                <y>3</y>
+                <width>8</width>
+                <height>10</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: #143982;</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="second" native="true">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>55</y>
+               <width>120</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:transparent;</string>
+             </property>
+             <widget class="QLabel" name="label_18">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>0</y>
+                <width>91</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font-size: 8px; background-color: transparent;</string>
+              </property>
+              <property name="text">
+               <string>43% - Internação</string>
+              </property>
+             </widget>
+             <widget class="QWidget" name="widget_17" native="true">
+              <property name="geometry">
+               <rect>
+                <x>8</x>
+                <y>3</y>
+                <width>8</width>
+                <height>10</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: #1B61DB;</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="third" native="true">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>70</y>
+               <width>120</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:transparent;</string>
+             </property>
+             <widget class="QLabel" name="label_21">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>0</y>
+                <width>91</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font-size: 8px; background-color: transparent;</string>
+              </property>
+              <property name="text">
+               <string>30% - Exames</string>
+              </property>
+             </widget>
+             <widget class="QWidget" name="widget_20" native="true">
+              <property name="geometry">
+               <rect>
+                <x>8</x>
+                <y>3</y>
+                <width>8</width>
+                <height>10</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: #79CDFC;</string>
+              </property>
+             </widget>
+            </widget>
+            <widget class="QWidget" name="fourth" native="true">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>85</y>
+               <width>120</width>
+               <height>16</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:transparent;</string>
+             </property>
+             <widget class="QLabel" name="label_22">
+              <property name="geometry">
+               <rect>
+                <x>20</x>
+                <y>0</y>
+                <width>91</width>
+                <height>17</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">font-size: 8px; background-color: transparent;</string>
+              </property>
+              <property name="text">
+               <string>15% - Outro</string>
+              </property>
+             </widget>
+             <widget class="QWidget" name="widget_23" native="true">
+              <property name="geometry">
+               <rect>
+                <x>8</x>
+                <y>3</y>
+                <width>8</width>
+                <height>10</height>
+               </rect>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: #87BAD3;</string>
+              </property>
+             </widget>
+            </widget>
+            <zorder>ImgIcoBG</zorder>
+            <zorder>Title</zorder>
+            <zorder>first</zorder>
+            <zorder>second</zorder>
+            <zorder>third</zorder>
+            <zorder>fourth</zorder>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </widget>
+       <widget class="QWidget" name="WidgetDIGQF" native="true">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>180</y>
+          <width>231</width>
+          <height>141</height>
+         </rect>
+        </property>
+        <property name="autoFillBackground">
+         <bool>false</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">background-color: #F0F7FE;
+border-radius: 250px; border-radius: 20px</string>
+        </property>
+        <widget class="QWidget" name="Container_DIGQF" native="true">
+         <property name="geometry">
+          <rect>
+           <x>10</x>
+           <y>10</y>
+           <width>211</width>
+           <height>121</height>
+          </rect>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: #FFFFFF;
+border-radius: 15px;</string>
+         </property>
+         <widget class="QLabel" name="DIGQF_Label">
+          <property name="geometry">
+           <rect>
+            <x>30</x>
+            <y>5</y>
+            <width>151</width>
+            <height>31</height>
+           </rect>
+          </property>
+          <property name="font">
+           <font>
+            <pointsize>8</pointsize>
+            <weight>63</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">font-weight: 500;</string>
+          </property>
+          <property name="text">
+           <string>Diagnósticos e queixas mais frequentes</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+         </widget>
+         <widget class="QWidget" name="imagem" native="true">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>39</y>
+            <width>211</width>
+            <height>81</height>
+           </rect>
+          </property>
+         </widget>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <widget class="QWidget" name="DIST_SEX_FAIX_ET" native="true">
+       <property name="geometry">
+        <rect>
+         <x>330</x>
+         <y>0</y>
+         <width>181</width>
+         <height>321</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #F0F7FE;
+border-radius: 250px; border-radius: 20px</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_7">
+        <item>
+         <widget class="QWidget" name="Container" native="true">
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: #FFFFFF;
+border-radius: 15px;</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_11">
+           <item>
+            <widget class="QWidget" name="widget" native="true">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>45</height>
+              </size>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_12">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="Title_2">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="font">
+                 <font>
+                  <pointsize>8</pointsize>
+                  <weight>75</weight>
+                  <bold>true</bold>
+                 </font>
+                </property>
+                <property name="text">
+                 <string>Dist. de Atmnts por sexo e faixa etária</string>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignCenter</set>
+                </property>
+                <property name="wordWrap">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="Line" name="line_3">
+                <property name="autoFillBackground">
+                 <bool>false</bool>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">background-color: #F0F7FE;</string>
+                </property>
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_2" native="true">
+             <property name="maximumSize">
+              <size>
+               <width>16777215</width>
+               <height>30</height>
+              </size>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_8">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QWidget" name="Widget_INPTATS" native="true">
+                <property name="styleSheet">
+                 <string notr="true">border: none;
+border-radius: 15;
+background-color: #F0F7FE; 
+padding-left: 10;
+padding-right: 25;</string>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_9">
+                 <property name="spacing">
+                  <number>5</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>5</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QLineEdit" name="lineEdit_2">
+                   <property name="text">
+                    <string>Exames</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_4" native="true">
+             <layout class="QVBoxLayout" name="verticalLayout_13">
+              <property name="spacing">
+               <number>0</number>
+              </property>
+              <property name="leftMargin">
+               <number>0</number>
+              </property>
+              <property name="topMargin">
+               <number>0</number>
+              </property>
+              <property name="rightMargin">
+               <number>0</number>
+              </property>
+              <property name="bottomMargin">
+               <number>0</number>
+              </property>
+              <item>
+               <widget class="QWidget" name="widget_5" native="true">
+                <layout class="QVBoxLayout" name="verticalLayout_15">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QWidget" name="widget_10" native="true"/>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="widget_11" native="true">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>45</height>
+                    </size>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item>
+               <widget class="QWidget" name="widget_6" native="true">
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>75</height>
+                 </size>
+                </property>
+                <layout class="QVBoxLayout" name="verticalLayout_14">
+                 <property name="spacing">
+                  <number>4</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QWidget" name="widget_8" native="true">
+                   <property name="maximumSize">
+                    <size>
+                     <width>16777215</width>
+                     <height>24</height>
+                    </size>
+                   </property>
+                   <layout class="QHBoxLayout" name="horizontalLayout_10">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <widget class="QLabel" name="label_3">
+                      <property name="minimumSize">
+                       <size>
+                        <width>50</width>
+                        <height>25</height>
+                       </size>
+                      </property>
+                      <property name="font">
+                       <font>
+                        <pointsize>6</pointsize>
+                        <weight>75</weight>
+                        <bold>true</bold>
+                       </font>
+                      </property>
+                      <property name="tabletTracking">
+                       <bool>true</bool>
+                      </property>
+                      <property name="text">
+                       <string>Faixa Etária</string>
+                      </property>
+                      <property name="alignment">
+                       <set>Qt::AlignCenter</set>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QWidget" name="widget_9" native="true"/>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Widget_2" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>321</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #F0F7FE;
+border-radius: 250px; border-radius: 20px</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <widget class="QWidget" name="Container_2" native="true">
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: #FFFFFF;
+border-radius: 15px;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Widget_3" native="true">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>170</y>
+         <width>151</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #F0F7FE;
+border-radius: 250px; border-radius: 20px</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <widget class="QWidget" name="Container_3" native="true">
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: #FFFFFF;
+border-radius: 15px;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="Widget_4" native="true">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>170</y>
+         <width>151</width>
+         <height>151</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>false</bool>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: #F0F7FE;
+border-radius: 250px; border-radius: 20px</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_10">
+        <item>
+         <widget class="QWidget" name="Container_4" native="true">
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: #FFFFFF;
+border-radius: 15px;</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
     </widget>
    </widget>
   </widget>
