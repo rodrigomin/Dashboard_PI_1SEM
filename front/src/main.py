@@ -39,8 +39,6 @@ class AppDemo(QMainWindow):
         super().__init__()
         uic.loadUi('front/src/dashboard.ui', self)
 
-        print(self.GRAPH_2.styleSheet())
-
         self.goLeft.clicked.connect(lambda: self.teste('left'))
         self.goRight.clicked.connect(lambda: self.teste('right'))
 
@@ -48,11 +46,11 @@ class AppDemo(QMainWindow):
         aplicar_sombra(self.Nause, 4)
         aplicar_sombra(self.DorCbc, 4)
         aplicar_sombra(self.InputF, 2)
-        aplicar_sombra(self.buscar, 4)
+        aplicar_sombra(self.buscarInpt, 4)
         aplicar_sombra(self.div, 4)
 
-        pixmap = QPixmap('../assets/suitcase-medical-solid-full.svg')
-        transform = QTransform().rotate(25)
+        pixmap = QPixmap('./front/assets/suitcase-medical-solid-full.svg')
+        transform = QTransform().rotate(-10)
         rotated_pixmap = pixmap.transformed(transform, Qt.SmoothTransformation)
         
         self.BG_ICOMED.setPixmap(rotated_pixmap)
