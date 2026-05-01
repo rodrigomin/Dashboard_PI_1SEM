@@ -43,7 +43,7 @@ class AppDemo(QMainWindow):
         self.goRight.clicked.connect(lambda: self.teste('right'))
 
         aplicar_sombra(self.Febre, 4)
-        aplicar_sombra(self.Nause, 4)
+        aplicar_sombra(self.Nause, 4)   
         aplicar_sombra(self.DorCbc, 4)
         aplicar_sombra(self.InputF, 2)
         aplicar_sombra(self.buscarInpt, 4)
