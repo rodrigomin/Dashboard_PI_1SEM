@@ -14,117 +14,15 @@ import seaborn as sns
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 import random
 
+# from widgets.glass_cards import GlassCard
+
+from charts.lineChart  import create_line_chart
+from charts.pieChart import create_pie_chart
+from charts.barChart import create_bar_chart
+from charts.cloudChart import changeCloudByDB
 
 QApplication.setAttribute(Qt.AA_EnableHighDpiScaling)
 QApplication.setAttribute(Qt.AA_UseHighDpiPixmaps)
-
-def aplicar_sombra(widget, y):
-        shadow = QGraphicsDropShadowEffect()
-        shadow.setBlurRadius(15)
-        shadow.setYOffset(y)
-        shadow.setXOffset(0)
-        shadow.setColor(QColor(0, 0, 0, 40))
-        widget.setGraphicsEffect(shadow)
-
-def animar_hover(widget, offset=4, duration=150):
-    widget._anim = QPropertyAnimation(widget, b"pos")
-    widget._anim.setDuration(duration)
-    widget._anim.setEasingCurve(QEasingCurve.OutCubic)
-
-    def enterEvent(event):
-        widget._anim.stop()
-        start = widget.pos()
-        end = start - QPoint(0, offset)
-        widget._anim.setStartValue(start)
-        widget._anim.setEndValue(end)
-        widget._anim.start()
-
-    def leaveEvent(event):
-        widget._anim.stop()
-        start = widget.pos()
-        end = start + QPoint(0, offset)
-        widget._anim.setStartValue(start)
-        widget._anim.setEndValue(end)
-        widget._anim.start()
-
-    widget.enterEvent = enterEvent
-    widget.leaveEvent = leaveEvent
-
-
-def aplicar_sombra_animada(widget):
-    shadow = QGraphicsDropShadowEffect()
-    shadow.setBlurRadius(15)
-    shadow.setYOffset(4)
-    shadow.setColor(QColor(0, 0, 0, 40))
-    widget.setGraphicsEffect(shadow)
-
-    widget._shadow = shadow
-
-    widget.shadow_anim = QPropertyAnimation(shadow, b"blurRadius")
-    widget.shadow_anim.setDuration(150)
-    widget.shadow_anim.setEasingCurve(QEasingCurve.OutCubic)
-
-    def enterEvent(event):
-        widget.shadow_anim.stop()
-        widget.shadow_anim.setStartValue(15)
-        widget.shadow_anim.setEndValue(30)
-        widget.shadow_anim.start()
-
-    def leaveEvent(event):
-        widget.shadow_anim.stop()
-        widget.shadow_anim.setStartValue(30)
-        widget.shadow_anim.setEndValue(15)
-        widget.shadow_anim.start()
-
-    widget.enterEvent = enterEvent
-    widget.leaveEvent = leaveEvent
-
-def hover_glass(widget):
-    # posição
-    widget._anim = QPropertyAnimation(widget, b"pos")
-    widget._anim.setDuration(150)
-    widget._anim.setEasingCurve(QEasingCurve.OutCubic)
-
-    start = widget.pos()
-
-    # sombra
-    shadow = QGraphicsDropShadowEffect()
-    shadow.setBlurRadius(15)
-    shadow.setYOffset(4)
-    shadow.setColor(QColor(0, 0, 0, 40))
-    widget.setGraphicsEffect(shadow)
-
-    widget._shadow = shadow
-    widget.shadow_anim = QPropertyAnimation(shadow, b"blurRadius")
-    widget.shadow_anim.setDuration(150)
-
-    def enterEvent(event):
-        # sobe
-        widget._anim.stop()
-        widget._anim.setStartValue(widget.pos())
-        widget._anim.setEndValue(widget.pos() - QPoint(0, 4))
-        widget._anim.start()
-
-        # sombra cresce
-        widget.shadow_anim.stop()
-        widget.shadow_anim.setStartValue(15)
-        widget.shadow_anim.setEndValue(30)
-        widget.shadow_anim.start()
-
-    def leaveEvent(event):
-        # desce
-        widget._anim.stop()
-        widget._anim.setStartValue(widget.pos())
-        widget._anim.setEndValue(widget.pos() + QPoint(0,4))
-        widget._anim.start()
-
-        widget.shadow_anim.stop()
-        widget.shadow_anim.setStartValue(30)
-        widget.shadow_anim.setEndValue(15)
-        widget.shadow_anim.start()
-
-    widget.enterEvent = enterEvent
-    widget.leaveEvent = leaveEvent
 
 class AppDemo(QMainWindow):
     def __init__(self):
@@ -138,62 +36,46 @@ class AppDemo(QMainWindow):
 
         sns.set_style("dark") 
 
-        self.fig_anual, self.ax_anual = plt.subplots(figsize=(5,4), dpi=100)
-        self.fig_mensal, self.ax_mensal = plt.subplots(figsize=(5,4), dpi=100)
-
-        # Pie
-        self.fig_pie, self.ax_pie = plt.subplots(figsize=(5,4), dpi=100)
-
-        self.fig_donut, self.ax_donut = plt.subplots(figsize=(5,4), dpi=100)
-
-        # Bar
-        self.fig_bar, self.ax_bar = plt.subplots(figsize=(5,4), dpi=100)
-
-        self.canvas_bar = FigureCanvas(self.fig_bar)
-        self.TIP_ATNDMNT_GRAPH.addWidget(self.canvas_bar)
-
-        self.canvas_donut = FigureCanvas(self.fig_donut)
-        self.Atd_tipServico_graph.addWidget(self.canvas_donut)
-
-        self.canvas_pie = FigureCanvas(self.fig_pie)
-        self.graph_2.addWidget(self.canvas_pie)
-
-
-        self.canvas_anual = FigureCanvas(self.fig_anual)
-        self.horizontalLayout_6.addWidget(self.canvas_anual)
-
-        self.canvas_mensal = FigureCanvas(self.fig_mensal)
-        self.graphicsVol_2.addWidget(self.canvas_mensal)
-
-        dados_mensal = {
+        self.dados_mensal = {
             'x': ['jan', 'fev', 'mar', 'abr', 'mai', 'jun', 'jul', 'ago', 'set', 'out', 'nov', 'dez'],
             'y': [1000, 2000, 3000, 1000, 1500, 2400, 5000, 2300, 3000, 3500, 2500, 8000]
         }
-        dados_anual = {
+        self.dados_anual = {
             "x": ['2019', '2020', '2021', '2022', '2023', '2024'],
             "y": [random.randint(3000, 8000) for _ in range(6)]
         }
 
-        dados_donut = {
+        self.dados_donut = {
             "data": [12, 43, 30, 90],
             "cores": ['#143982', '#1B61DB', '#79CDFC', '#87BAD3'],
             "labels": [self.prontoSocorro, self.Internacao, self.exames, self.outro]
             }
         
-        dados_bar = {
+        self.dados_bar = {
             "data": [20, 30, 40, 15],
             "cores": ['#1B61DB', '#79CDFC', '#143982', '#87BAD3'],
             "labels": ['Triagem', 'Consulta', 'Exames', 'Cirurgias'],
         }
 
+        dados_diagfreq = {
+            'HIV': 40,
+            'Hemorróida': 20,
+            'Gripe': 349,
+            'Dor no corpo': 120,
+            'Tosse': 200,
+            'Diarréia': 50,
+            'HPV': 34
+        }
         
-        self.gerarGraficoLine(self.fig_anual, self.ax_anual, self.canvas_anual, dados_anual, 8500)
-        self.gerarGraficoLine(self.fig_mensal, self.ax_mensal, self.canvas_mensal, dados_mensal, 8500)
-
-        self.gerarPizza(self.ax_pie, self.fig_pie, self.canvas_pie, [180, 80], ['#0066FF', '#FF00EE'], [self.homens_val, self.mulheres_val], False)
-        self.gerarPizza(self.ax_donut, self.fig_donut, self.canvas_donut, dados_donut['data'], dados_donut['cores'], dados_donut['labels'], True)
-
-        self.gerarBarGraph(self.ax_bar, self.fig_bar, self.canvas_bar, dados_bar['data'], dados_bar['cores'], dados_bar['labels'])
+        labels_cloud = {
+            'labels': [self.label1stSqr, self.label2ndSqr, self.label3rdSqr, self.label4thSqr, self.label5thSqr, self.label6thSqr],
+            'value': [self.value1stSqr, self.value2ndSqr, self.value3rdSqr, self.value4thSqr, self.value5thSqr, self.value6thSqr]
+        }
+        
+        changeCloudByDB(labels_cloud['labels'], labels_cloud['value'], dados_diagfreq)
+        
+        self.setup_graphs()
+        
         # button functions
 
         self.goLeft.clicked.connect(lambda: self.teste('left'))
@@ -207,91 +89,38 @@ class AppDemo(QMainWindow):
         self.VolAtdComboBox.currentIndexChanged.connect(self.graphsAtd)
         self.DistAtdComboBox.currentIndexChanged.connect(self.graphsDistAtd)
 
-    def gerarBarGraph(self, ax, fig, canvas, dados, cores, labels):
-        ax.clear()
-        x = range(len(dados))
-
-        # 1. Desenha as barras
-        ax.bar(
-            x,
-            height=dados,
-            color=cores,
-            tick_label=labels,
-            width=0.4 # Aumentei um pouco, 0.25 fica muito fininha
-        )
-
-        # 2. Define explicitamente o que deve aparecer no Y
-     
-        # 3. Configura os ticks (números)
-        ax.tick_params(axis='y', labelsize=8, colors='#666666')
-        ax.tick_params(axis='x', labelsize=6, colors='#666666')
-
-        ax.set_axisbelow(True) 
-        ax.grid(axis='y', color='gray', linestyle='--', alpha=0.3)
     
-        fig.subplots_adjust(left=0.2, bottom=0.2, top=0.9, right=0.95)
-
-        canvas.draw()
-
-
-
-
-    def gerarPizza(self, ax, fig, canvas, dados, cores, labels, rosca):
-
-
-        ax.clear()
-
-        ax.pie(
-            dados,
-            startangle=20,
-            colors=cores,
-            textprops={'fontsize': 9, 'color': '#444444'},
-            wedgeprops={'edgecolor': 'white', 'linewidth': 2}
+    def setup_graphs(self):
+        create_line_chart(
+            layout=self.horizontalLayout_6,
+            dados=self.dados_anual,
+            max_val=8000
+        )
+        create_line_chart(
+            layout=self.graphicsVol_2,
+            dados=self.dados_mensal,
+            max_val=8000
+        )
+        create_bar_chart(
+            layout=self.TIP_ATNDMNT_GRAPH,
+            dados=self.dados_bar['data'],
+            cores=self.dados_bar['cores'],
+            labels=self.dados_bar['labels']
+        )
+        create_pie_chart(
+            layout=self.Atd_tipServico_graph,
+            dados=self.dados_donut['data'],
+            cores=self.dados_donut['cores'],
+            donut=True
+        )
+        create_pie_chart(
+            layout=self.graph_2,
+            dados=[180, 80],
+            cores=['#0066FF', '#FF00EE'],
+            donut=False,
+            labels=[self.homens_val, self.mulheres_val]
         )
 
-        # definindo valor de homens e mulheres
-
-        for index, valor in enumerate(dados):
-            labels[index].setText(f"{(valor / sum(dados)) * 100:.0f}%")
-        
-        if (rosca == True):
-            circulo = plt.Circle((0,0), 0.70, fc='white')
-            ax.add_artist(circulo)
-
-        ax.axis('equal')
-
-        fig.tight_layout()
-
-        canvas.draw()
-
-
-    def gerarGraficoLine(self, fig, ax, canvas,dados, max_val):
-
-        ax.clear()
-
-        
-        sns.lineplot(
-            data=dados,
-            x='x', 
-            y='y', 
-            ax=ax, 
-            marker='o', 
-            color='#ff7f0e', 
-            linewidth=1
-        )
-
-        # Define o tamanho base para todos os textos do gráfico
-        ax.tick_params(axis='both', labelsize=8) 
-
-        ax.set_ylim(0, max_val) 
-
-        ax.set_ylabel("") # Remove o texto "Volume" (ou qualquer outro) do eixo Y
-        
-        ax.set_xticklabels(dados['x'])
-
-        ax.grid()
-        fig.tight_layout()
-        canvas.draw()
 
 
     def teste(self, dir):
