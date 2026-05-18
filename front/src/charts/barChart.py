@@ -1,4 +1,3 @@
-import seaborn as sns
 import matplotlib.pyplot as plt
 
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
@@ -21,9 +20,10 @@ def create_bar_chart(layout, dados, cores, labels):
 
         canvas = FigureCanvas(fig)
         layout.addWidget(canvas)
+
      
-        ax.tick_params(axis='y', labelsize=8, colors='#666666')
-        ax.tick_params(axis='x', labelsize=6, colors='#666666')
+        ax.tick_params(axis='y', labelsize=6, colors='#666666')
+        ax.tick_params(axis='x', labelsize=5, colors='#666666')
 
         ax.set_axisbelow(True) 
         ax.grid(axis='y', color='gray', linestyle='--', alpha=0.3)
