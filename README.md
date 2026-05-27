@@ -72,6 +72,11 @@ Este dashboard foi desenvolvido para análise dos dados oferecidos pelo banco de
 
 ---
 
+# Endpoints
+
+> Ainda em desenvolvimento, será feito pelo João Victor.
+---
+
 # Instalação de Dependências
 
 ### Windows:
